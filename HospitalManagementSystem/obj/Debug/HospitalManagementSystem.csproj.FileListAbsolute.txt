@@ -39,3 +39,12 @@ F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\obj\
 F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
 F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
 F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\itextsharp.dll
+E:\Final_CSSE\HospitalManagementSystem\bin\HospitalManagementSystem.dll.config
+E:\Final_CSSE\HospitalManagementSystem\bin\HospitalManagementSystem.dll
+E:\Final_CSSE\HospitalManagementSystem\bin\HospitalManagementSystem.pdb
+E:\Final_CSSE\HospitalManagementSystem\bin\MySql.Data.xml
+E:\Final_CSSE\HospitalManagementSystem\bin\MySql.Web.xml
+E:\Final_CSSE\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csprojResolveAssemblyReference.cache
+E:\Final_CSSE\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
+E:\Final_CSSE\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
+E:\Final_CSSE\HospitalManagementSystem\bin\itextsharp.pdfa.dll
