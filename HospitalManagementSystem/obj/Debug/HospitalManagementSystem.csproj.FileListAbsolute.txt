@@ -28,3 +28,14 @@ C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\MySq
 C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csprojResolveAssemblyReference.cache
 C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
 C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\HospitalManagementSystem.dll.config
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\HospitalManagementSystem.dll
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\HospitalManagementSystem.pdb
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\MySql.Data.dll
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\MySql.Web.dll
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\MySql.Data.xml
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\MySql.Web.xml
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csprojResolveAssemblyReference.cache
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
+F:\myprojects\Final_CSSE\HospitalManagementSys_New\HospitalManagementSystem\bin\itextsharp.dll

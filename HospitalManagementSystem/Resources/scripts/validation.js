@@ -52,31 +52,3 @@ function GetDOBnGender() {
         }
     });
 }
-
-function ValidateForm() {
-    var status = true;
-
-    var type = document.getElementById("lstEmpType");
-    var typeSelected = type.options[type.selectedIndex].text;
-
-    var type_other = document.getElementById("txtTitle");
-    var firstname = document.getElementById("txtFirstName");
-    var lastname = document.getElementById("txtLastName");
-    var address = document.getElementById("txtAddress");
-    var nic = document.getElementById("txtNIC");
-    var dob = document.getElementById("txtDOB");
-    var gendermale = document.getElementById("radioBtnMale");
-    var type = document.getElementById("radioBtnFemale");
-    var type = document.getElementById("txtMail");
-    var type = document.getElementById("txtContact");
-    var type = document.getElementById("txtSalary");
-
-    if (typeSelected == "") {
-        type.style.borderColor = "#E34234";
-        status = false;
-    }
-
-    if (typeSelected == "Other") {
-        if(!($.trim(type)))
-    }
-}

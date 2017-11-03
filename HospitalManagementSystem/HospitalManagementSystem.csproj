@@ -40,6 +40,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\SLIIT\1 SE 1\3rd year\2nd sem\CSSE\assignment\assignment 2\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Web, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -71,6 +74,12 @@
     <Content Include="AddItem.aspx" />
     <Content Include="AddSuppliers.aspx" />
     <Content Include="Employee.aspx" />
+    <Content Include="frm_appointment_sessions.aspx" />
+    <Content Include="frm_chanelInfo.aspx" />
+    <Content Include="frm_patient.aspx" />
+    <Content Include="frm_patient_details.aspx" />
+    <Content Include="frm_session_details.aspx" />
+    <Content Include="frm_session_report.aspx" />
     <Content Include="Issue.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="Resources\css\bootstrap.css" />
@@ -86,6 +95,7 @@
     <Content Include="Resources\images\444.png" />
     <Content Include="Resources\images\about-pic.jpg" />
     <Content Include="Resources\images\acc.png" />
+    <Content Include="Resources\images\add.png" />
     <Content Include="Resources\images\am.png" />
     <Content Include="Resources\images\arr.png" />
     <Content Include="Resources\images\arrow.png" />
@@ -95,12 +105,14 @@
     <Content Include="Resources\images\bot_mid.gif" />
     <Content Include="Resources\images\bot_rig.gif" />
     <Content Include="Resources\images\bub-icon.png" />
+    <Content Include="Resources\images\cancle.png" />
     <Content Include="Resources\images\cen_lef.gif" />
     <Content Include="Resources\images\cen_rig.gif" />
     <Content Include="Resources\images\d1.jpg" />
     <Content Include="Resources\images\d2.jpg" />
     <Content Include="Resources\images\d3.jpg" />
-    <Content Include="Resources\images\downarrow.png" />
+    <Content Include="Resources\images\delete.png" />
+    <Content Include="Resources\images\edit.png" />
     <Content Include="Resources\images\em.png" />
     <Content Include="Resources\images\glyphicons-halflings-white.png" />
     <Content Include="Resources\images\glyphicons-halflings.png" />
@@ -117,7 +129,6 @@
     <Content Include="Resources\images\pic2.jpg" />
     <Content Include="Resources\images\pic3.jpg" />
     <Content Include="Resources\images\picLab.png" />
-    <Content Include="Resources\images\rightarrow.png" />
     <Content Include="Resources\images\search-icon.png" />
     <Content Include="Resources\images\search.png" />
     <Content Include="Resources\images\sign-ban.png" />
@@ -136,6 +147,7 @@
     <Content Include="Resources\images\top_lef.gif" />
     <Content Include="Resources\images\top_mid.gif" />
     <Content Include="Resources\images\top_rig.gif" />
+    <Content Include="Resources\images\update.png" />
     <Content Include="Resources\scripts\ai.0.22.9-build00167.js" />
     <Content Include="Resources\scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Resources\scripts\bootstrap.js" />
@@ -172,6 +184,48 @@
       <DependentUpon>Employee.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
+    <Compile Include="frm_appointment_sessions.aspx.cs">
+      <DependentUpon>frm_appointment_sessions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_appointment_sessions.aspx.designer.cs">
+      <DependentUpon>frm_appointment_sessions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_chanelInfo.aspx.cs">
+      <DependentUpon>frm_chanelInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_chanelInfo.aspx.designer.cs">
+      <DependentUpon>frm_chanelInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patient.aspx.cs">
+      <DependentUpon>frm_patient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_patient.aspx.designer.cs">
+      <DependentUpon>frm_patient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patient_details.aspx.cs">
+      <DependentUpon>frm_patient_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_patient_details.aspx.designer.cs">
+      <DependentUpon>frm_patient_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_session_details.aspx.cs">
+      <DependentUpon>frm_session_details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_session_details.aspx.designer.cs">
+      <DependentUpon>frm_session_details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_session_report.aspx.cs">
+      <DependentUpon>frm_session_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_session_report.aspx.designer.cs">
+      <DependentUpon>frm_session_report.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Issue.aspx.cs">
       <DependentUpon>Issue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
