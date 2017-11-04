@@ -1,0 +1,30 @@
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.dll.config
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.dll
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.pdb
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Data.dll
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Web.dll
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Data.xml
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Web.xml
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csprojResolveAssemblyReference.cache
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
+F:\3rd Year\2nd semester\CSSE\Project original\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.dll.config
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.dll
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.pdb
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Data.dll
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Web.dll
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Data.xml
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Web.xml
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
+C:\Users\ASHI\Desktop\Ashi Proj\Ashi Proj\Project original\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.dll.config
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.dll
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\HospitalManagementSystem.pdb
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Data.dll
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Web.dll
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Data.xml
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\bin\MySql.Web.xml
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.dll
+C:\Users\ASHI\Desktop\HospitalManagementSystem\HospitalManagementSystem\obj\Debug\HospitalManagementSystem.pdb
