@@ -590,7 +590,7 @@ namespace HospitalManagementSystem
             {
                 cmd = db.CreateCommand();
 
-                cmd.CommandText = "SELECT PatientName, Email FROM patient WHERE PatientId=@patientID";
+                cmd.CommandText = "SELECT PatientName, Email FROM Patient_Lab WHERE PatientId=@patientID";
 
                 cmd.Parameters.AddWithValue("@patientID", patientId);
 
@@ -698,7 +698,7 @@ namespace HospitalManagementSystem
             {
                 cmd = db.CreateCommand();
 
-                cmd.CommandText = "SELECT PatientName FROM patient WHERE PatientId=@patientId";
+                cmd.CommandText = "SELECT PatientName FROM Patient_Lab WHERE PatientId=@patientId";
 
                 cmd.Parameters.AddWithValue("@patientId", patientId);
 

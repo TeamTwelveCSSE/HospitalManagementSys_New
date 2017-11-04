@@ -39,7 +39,7 @@
                         <div class="topnav" id="TopNavBar">
                           <a href="Laboratory.aspx"><font color="96C03A">Lab Test</font></a>
                           <a href="LabReport.aspx">Lab Report</a>
-                          <a href="#Lab Order">Lab Order</a>
+                          <a href="LabReportForThyroid.aspx">Lab Order</a>
                           <a href="#about">About</a>
                         </div>
                     <!-- page heading -->
