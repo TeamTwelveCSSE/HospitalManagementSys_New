@@ -84,7 +84,11 @@
     <Content Include="frm_patient_details.aspx" />
     <Content Include="frm_session_details.aspx" />
     <Content Include="frm_session_report.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="Issue.aspx" />
+    <Content Include="Laboratory.aspx" />
+    <Content Include="LabReport.aspx" />
+    <Content Include="LabReportForThyroid.aspx" />
     <Content Include="Order.aspx" />
     <Content Include="OutPatientCharges.aspx" />
     <Content Include="ProfitCalculation.aspx" />
@@ -197,6 +201,7 @@
       <DependentUpon>Employee.aspx</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
+    <Compile Include="EventLogUtil.cs" />
     <Compile Include="frm_appointment_sessions.aspx.cs">
       <DependentUpon>frm_appointment_sessions.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,6 +244,13 @@
     <Compile Include="frm_session_report.aspx.designer.cs">
       <DependentUpon>frm_session_report.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Issue.aspx.cs">
       <DependentUpon>Issue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -246,6 +258,28 @@
     <Compile Include="Issue.aspx.designer.cs">
       <DependentUpon>Issue.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Laboratory.aspx.cs">
+      <DependentUpon>Laboratory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Laboratory.aspx.designer.cs">
+      <DependentUpon>Laboratory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabReport.aspx.cs">
+      <DependentUpon>LabReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabReport.aspx.designer.cs">
+      <DependentUpon>LabReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabReportForThyroid.aspx.cs">
+      <DependentUpon>LabReportForThyroid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabReportForThyroid.aspx.designer.cs">
+      <DependentUpon>LabReportForThyroid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabReportObj.cs" />
     <Compile Include="Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -275,6 +309,8 @@
     <Compile Include="Template.aspx.designer.cs">
       <DependentUpon>Template.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestObj.cs" />
+    <Compile Include="ThyroidObj.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />

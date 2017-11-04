@@ -24,6 +24,7 @@
    	<!-- webfonts -->
    	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
    	<!-- webfonts -->
+	
 </head>
 <body>
     <!-- container -->
@@ -66,7 +67,7 @@
                                         <div class="col-md-6">
                                             <div class="col-md-4">Employee Type</div>
                                             <div class="col-md-8">
-                                                <asp:DropDownList ID="lstEmpType" runat="server" class="form-control" AutoPostBack="false" Visible="True">
+                                                <asp:DropDownList ID="lstEmpType" runat="server" class="form-control" AutoPostBack="false" Visible="True" onChange="VisibleTextBox()">
                                                     <asp:ListItem></asp:ListItem>
                                                     <asp:ListItem>Attendant</asp:ListItem>
                                                     <asp:ListItem>Lab Assistance</asp:ListItem>
@@ -78,6 +79,7 @@
                                             </div> 
                                         </div>
                                         <div class="col-md-3">
+											<div id="txtOther" style="display:none"><asp:TextBox ID="txtTitle" runat="server" class="form-control" Visible="true"></asp:TextBox></div> 
                                         </div>
                                     </div>
 
@@ -86,7 +88,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Employee ID</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtEmpIDRegister" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtEmpIDRegister" runat="server" class="form-control" ReadOnly="true"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -121,7 +123,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Address</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtAddress" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtAddress" runat="server" class="form-control" TextMode="MultiLine" ></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -132,7 +134,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">NIC</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtNIC" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtNIC" runat="server" class="form-control"  MaxLength="10"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -143,7 +145,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Date Of Birth</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtDOB" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtDOB" runat="server" class="form-control" TextMode="Date"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -154,7 +156,12 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Gender</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtGender" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8">
+                                                <asp:RadioButtonList ID="radioGender" runat="server" Font-Size="Small">
+                                                    <asp:ListItem Selected="True">Male</asp:ListItem>
+                                                    <asp:ListItem>Female</asp:ListItem>
+                                                </asp:RadioButtonList>
+                                            </div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -176,7 +183,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Contact</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtContact" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtContact" runat="server" class="form-control" MaxLength="10"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -214,6 +221,8 @@
                                     </div>
 
                                     <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
                                         <div class="col-md-6">
                                         </div>
                                         <div class="col-md-3">
@@ -223,6 +232,41 @@
                                             <div class="col-md-6">
                                                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row top-buffer">
+                                        <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            View Employee Details
+                                            <a data-toggle="collapse" data-target="#emp_details"><img src="Resources/images/downarrow.png"/></a>
+                                            <div id="emp_details" class="collapse">
+                                                <asp:GridView ID="GridEmp" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"><AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
+
+                                                    <EditRowStyle BackColor="#999999"></EditRowStyle>
+
+                                                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></FooterStyle>
+
+                                                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></HeaderStyle>
+
+                                                    <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+
+                                                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333"></RowStyle>
+
+                                                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
+
+                                                    <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+
+                                                    <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+
+                                                    <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+
+                                                    <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
+                                                </asp:GridView>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
                                         </div>
                                     </div>
 

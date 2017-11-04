@@ -210,4 +210,17 @@ namespace HospitalManagementSystem
         }
 
     }
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        [WebMethod]
+        public static void GetGender_DOB(string nic)
+        {
+            DataManager dtMgr = new DataManager();
+
+
+        }
+    }
 }

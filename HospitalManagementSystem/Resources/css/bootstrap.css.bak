@@ -5801,34 +5801,5 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-
-  
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: end;
-    text-decoration: none;
-    font-size: 25px;
-    background-color: #2c3e50;
-    padding: 5px 16px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    color: #96C03A;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    color: #96C03A;
 }
 /*# sourceMappingURL=bootstrap.css.map */

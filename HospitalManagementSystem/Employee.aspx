@@ -25,13 +25,6 @@
    	<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
    	<!-- webfonts -->
 	
-	<script type="text/javascript">
-        $(document).ready(function () {
-            $(function () {
-                $("#txtDOB").datepicker();
-            });
-        });
-    </script>
 </head>
 <body>
     <!-- container -->
@@ -152,7 +145,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Date Of Birth</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtDOB" runat="server" class="form-control" ClientIDMode="Static"></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtDOB" runat="server" class="form-control" TextMode="Date"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -163,11 +156,11 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Gender</div>
-                                            <div class="col-md-4">
-                                                <asp:RadioButton ID="radioBtnMale" runat="server" GroupName="gender" Text="Male"></asp:RadioButton>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <asp:RadioButton ID="radioBtnFemale" runat="server" GroupName="gender" Text="Female"></asp:RadioButton>
+                                            <div class="col-md-8">
+                                                <asp:RadioButtonList ID="radioGender" runat="server" Font-Size="Small">
+                                                    <asp:ListItem Selected="True">Male</asp:ListItem>
+                                                    <asp:ListItem>Female</asp:ListItem>
+                                                </asp:RadioButtonList>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
@@ -190,7 +183,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="col-md-4">Contact</div>
-                                            <div class="col-md-8"><asp:TextBox ID="txtContact" runat="server" class="form-control" ></asp:TextBox></div>
+                                            <div class="col-md-8"><asp:TextBox ID="txtContact" runat="server" class="form-control" MaxLength="10"></asp:TextBox></div>
                                         </div>
                                         <div class="col-md-3">
                                         </div>
@@ -228,50 +221,69 @@
                                     </div>
 
                                     <div class="row top-buffer">
-                                        <div class="col-md-6">
-                                        </div>
                                         <div class="col-md-3">
-                                            <div class="col-md-6">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="col-md-3">
                                                 <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click"/>                                                
                                             </div>
-                                            <div class="col-md-6">
-                                                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                                            <div class="col-md-3">
+                                                <asp:Button ID="btnUpdate" runat="server" Text="Update" Enabled="false" BackColor="Gray" OnClick="btnUpdate_Click"/>                                                
                                             </div>
+                                            <div class="col-md-3">
+                                                <asp:Button ID="btnDelete" runat="server" Text="Delete" Enabled="false" BackColor="Gray"/>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" OnClientClick="return ValidateEmployeeForm()"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
                                         </div>
                                     </div>
 
-                                    <div class="row top-buffer">
-                                        <div class="col-md-3">
-                                        </div>
+                                    <div class="row top-buffer" style="padding-top:30px">
                                         <div class="col-md-6">
                                             View Employee Details
                                             <a data-toggle="collapse" data-target="#emp_details"><img src="Resources/images/downarrow.png"/></a>
-                                            <div id="emp_details" class="collapse">
-                                                <asp:GridView ID="GridEmp" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"><AlternatingRowStyle BackColor="White" ForeColor="#284775"></AlternatingRowStyle>
+                                            <div id="emp_details" class="collapse" style="padding-top:45px">
+                                                <asp:GridView ID="GridEmp" runat="server" CellPadding="3" GridLines="Vertical" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" OnSelectedIndexChanged="GridEmp_SelectedIndexChanged" AutoGenerateSelectButton="True" OnRowDataBound="GridEmp_RowDataBound" OnUnload="Page_Load" OnRowDeleting="btnDelete_Click" OnRowEditing="GridViewTest_RowEditing" OnRowUpdating="GridViewTest_RowUpdating" AllowPaging="True" AutoGenerateDeleteButton="True" AutoGenerateEditButton="True">
 
-                                                    <EditRowStyle BackColor="#999999"></EditRowStyle>
+                                                    <AlternatingRowStyle BackColor="#DCDCDC"></AlternatingRowStyle>
 
-                                                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></FooterStyle>
+                                                    <FooterStyle BackColor="#CCCCCC" ForeColor="Black"></FooterStyle>
 
-                                                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White"></HeaderStyle>
+                                                    <HeaderStyle BackColor="#3d4f17" Font-Bold="True" ForeColor="White"></HeaderStyle>
 
-                                                    <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+                                                    <PagerStyle HorizontalAlign="Center" BackColor="#999999" ForeColor="Black"></PagerStyle>
 
-                                                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333"></RowStyle>
+                                                    <RowStyle BackColor="#EEEEEE" ForeColor="Black"></RowStyle>
 
-                                                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333"></SelectedRowStyle>
+                                                    <SelectedRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White"></SelectedRowStyle>
 
-                                                    <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+                                                    <SortedAscendingCellStyle BackColor="#F1F1F1"></SortedAscendingCellStyle>
 
-                                                    <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+                                                    <SortedAscendingHeaderStyle BackColor="#0000A9"></SortedAscendingHeaderStyle>
 
-                                                    <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+                                                    <SortedDescendingCellStyle BackColor="#CAC9C9"></SortedDescendingCellStyle>
 
-                                                    <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
+                                                    <SortedDescendingHeaderStyle BackColor="#96C03A"></SortedDescendingHeaderStyle>
                                                 </asp:GridView>
                                             </div>
+
+                                            <div id="divFailed" class="alert alert-danger" style="text-align:center" runat="server" visible="False">
+                                                <asp:Label ID="lblFailed" runat="server" Visible="False" Text="" Font-Size=""></asp:Label>
+                                            </div>
                                         </div>
-                                        <div class="col-md-3">
+                                        <div class="col-md-6">
+                                            <asp:DropDownList ID="lstSearch" runat="server"><asp:ListItem>Employee Id</asp:ListItem>
+                                                <asp:ListItem>Employee Type</asp:ListItem>
+                                                <asp:ListItem>First Name</asp:ListItem>
+                                                <asp:ListItem>Last Name</asp:ListItem>
+                                                <asp:ListItem>NIC</asp:ListItem>
+                                                <asp:ListItem>E Mail</asp:ListItem>
+                                            </asp:DropDownList>
+                                            <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
+                                            <asp:Button ID="brnSearch" runat="server" Text="Search" OnClick="brnSearch_Click"></asp:Button>
                                         </div>
                                     </div>
 
